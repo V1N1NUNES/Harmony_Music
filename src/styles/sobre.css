@@ -1,0 +1,165 @@
+@import url(https://fonts.google.com/specimen/Kaushan+Script?query=kaushan);
+@keyframes crescerDiminuir {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+/* Css reset */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #5656F7;
+    color: aliceblue;
+    min-width: 800px;
+    font-family: 'K2D';
+}
+header .header-container{/*deixar o cabeçalho transparente quando rolar*/
+    background-color: rgba(55, 55, 55, 1);
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+header .header_dia_musica{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+header .header_dia_musica img{
+    width: 40px;
+    height: 40px;
+}
+header .linha_divisora_1{
+    width: auto;
+    border: solid aliceblue 2px;
+    margin: 9px 350px;
+}
+header .header_nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header nav{
+    width: 480px;
+    display: flex;
+    justify-content: space-around;
+    font-weight: 600;
+    height: 20px;
+
+}
+header .header_nav a{ 
+    text-decoration: none;
+    color: aliceblue;
+    transform: scale(1.3);
+    transition: transform 0.5s ease;
+}
+header .header_nav a:hover{
+    transform: scale(2);
+}
+main section .sobre-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto 50px;
+    margin-top: 150px;
+}
+main section .sobre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main section .sobre h1{
+    font-weight: 850;
+    font-size: 45px;
+}
+main section .intro-text{
+    padding: 5px;
+    height: 250px;
+    width: 700px;
+}
+main section .intro-text p{
+    font-size: 32px;
+    font-weight: 400;
+}
+main section .contato h1{
+    font-weight: 850;
+    font-size: 45px;
+    margin-bottom: 22px;
+    margin-top: 40px;
+}
+main section .pages-links{
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+    justify-content: space-around;
+}
+main section .pages-links a{
+    transform: scale(1.3);
+    transition: transform 0.5s ease;
+}
+main section .pages-links a:hover{
+    transform: scale(1.5);
+}
+main section .pages-links img{
+    height: 30px;
+    width: 30px;
+}
+main section .gmail{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main section .linkedin{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main section .github{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main .linha_divisora_2{
+    width: auto;
+    border: solid aliceblue 2px;
+    margin: 14px 150px;
+}
+main section .harmony-frase{
+    padding: 5px;
+    display: flex;
+    justify-content: end;
+}
+main section .harmony-frase h3 {
+    font-family: 'Kaushan Script', cursive;
+    margin-right: 150px;
+    height: 80px;
+    width: 400px;
+    animation: crescerDiminuir 6s infinite;
+}
+footer{
+    background-color: #373737;
+}
+footer .roda-pe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 30px;
+    margin-top: 150px;
+}
