@@ -1,7 +1,5 @@
-/* adicionar a fonte escolhida */
+@import url('https://fonts.googleapis.com/css2?family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Kaushan+Script&display=swap');
 
-
-/* Css reset */
 *{
     padding: 0;
     margin: 0;
@@ -11,10 +9,12 @@ body{
     background-color: #5656F7;
     color: aliceblue;
     min-width: 800px;
+    font-family: 'k2d';
 }
-header .header-container{/*deixar o cabeçalho transparente quando rolar*/
+header .header-container{
     background-color: rgba(55, 55, 55, 1);
     height: 100px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     position: fixed;
@@ -83,6 +83,10 @@ main section .historia-container{
     margin: auto 50px; 
     margin-bottom: 100px;
     gap: 170px;
+    transition: transform 0.3s ease;
+}
+main section .historia-container:hover{
+    transform: scale(0.9);
 }
 main section .historia-img img{
     border-radius: 14px;
@@ -109,6 +113,10 @@ main section .importancia-container{
     margin: auto 50px; 
     margin-bottom: 100px;
     gap: 170px;
+    transition: transform 0.3s ease;
+}
+main section .importancia-container:hover{
+    transform: scale(0.9);
 }
 main section .importancia-text{
     display: flex;
